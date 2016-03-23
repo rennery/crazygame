@@ -1,0 +1,118 @@
+<!DOCTYPE html >
+<html  manifest=”example.manifest”>
+<head>
+<link href="miaov_style.css" rel="stylesheet" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>crazy game</title>
+
+	<script src="jquery-2.1.0.js" type="text/javascript"></script>
+<script src="http://code.createjs.com/easeljs-0.6.0.min.js"></script>
+<script src="miaov.js"></script>
+<script type="text/javascript" src="eventcontrol.js"></script>
+</head>
+
+<body>
+<audio id="back"  loop="loop" autoplay="autoplay">
+  <source src="welcome.mp3" type="audio/mp3" />
+Your browser does not support the audio element.
+</audio>
+<audio id="win_game">
+  <source  src="win_lv.mp3" type="audio/mp3" />
+
+Your browser does not support the audio element.
+</audio>
+<audio id="lose_game">
+
+  <source  src="lose_lv.mp3" type="audio/mp3" />
+Your browser does not support the audio element.
+</audio>
+<div id="div16">
+<p id="counter_c">you only have:</p>
+</div>
+<div id="div1">
+	<img id="back_lv" src="images/1.png" width="64" onclick="load_back();"/>
+	<img id="start_lv" src="images/2.png" width="64" onclick="load_1st();"/>
+	<img id="quit_game" src="images/3.png" width="64" onclick="reload();"/>
+	<img id="next_lv" src="images/4.png" width="64" onclick="load_next();"/>
+
+</div>
+
+
+<div id="div2">
+<canvas id="myCanvas" z-index=2; width="700" height="400"> 07.Your browser does not support the canvas element. </canvas>
+<script type="text/javascript" src="canvas_load.js"></script>
+</div>
+<div id="div3">
+<img src="images/tip_start.png" width="164" />
+</div>
+<div id="div4">
+<p>click here to start</p>
+</div>
+
+<div id="div10" >
+<img src="images/lv1_wel.png" width="832" />
+
+</div>
+
+<script type="text/javascript" src="lv2.js"></script>
+
+<div id="div5">
+<div id="div9"  style="float:right;">
+<br>enter password, you can pass:</br>
+
+</div>
+<div id="div11"  style="float:right;">
+<p id="password_input"></p>
+
+</div>
+<div id="div6">
+<img src="images/p.png" width="32" onclick="p();"/>
+<img src="images/f.png" width="32" onclick="f();"/>
+<img src="images/d.png" width="32" onclick="d();"/>
+<img src="images/a.png" width="32" onclick="a();"/>
+</div>
+<div id="div7">
+<img src="images/r.png" width="32" onclick="r();"/>
+<img src="images/k.png" width="32" onclick="k();"/>
+<img src="images/m.png" width="32" onclick="m();"/>
+<img src="images/o.png" width="32" onclick="o();"/>
+</div>
+
+<div id="div8">
+<img src="images/b.png" width="32" onclick="b();"/>
+<img src="images/g.png" width="32" onclick="g();"/>
+<img src="images/s.png" width="32" onclick="s();"/>
+<img src="images/w.png" width="32" onclick="w();"/>
+</div>
+
+
+</div>
+
+<div id="div12"  >
+<img src="images/lv_hint.png" width="533" />
+<img src="images/reset.png" width="33" onclick="restart();"/>
+</div>
+<div id="div17"  >
+<img src="images/lv2_int1.png" width="533" />
+<img src="images/reset.png" width="33" onclick="restart();"/>
+</div>
+<div id="div18"  >
+<img src="images/lv2_int2.png" width="533" />
+<img src="images/reset.png" width="33" onclick="restart();"/>
+</div>
+<div id="div19"  >
+<img src="images/lv2_pass.png" width="533" />
+
+</div>
+<div id="div13"  >
+<img src="images/lv_pass.png" width="553" />
+</div>
+<div id="div14"  >
+<img src="images/happy.png" width="553" />
+</div>
+<div id="div15" >
+<img src="images/lv2_wel.png" width="532" />
+
+</div>
+</body>
+</html>
