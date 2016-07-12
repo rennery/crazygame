@@ -15,7 +15,7 @@
 ?	How do you lose the game?						level1, if you enter letters on screen, you will lose.
 										level2, if you run out of time or kill cats, you will 												lose.
 
-?	List the three additional things you used in your game     		radio, jquery, localstorage,web SQL;
+?	List the three additional things you used in your game     		radio, jquery, localstorage,web SQL, createjs and easeljs libraries;
 ?	How did you test your game? 						by unit test
 ?	Potential performance issues						may have display errors.
 ?	What features would you like to implement in the future?		more crazy levels and add more cartoon figures as well 										as a list to let player to select levels.
